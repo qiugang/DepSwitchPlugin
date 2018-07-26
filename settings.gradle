@@ -15,3 +15,4 @@
  */
 
 include ':example', ':example_module', 'buildSrc'
+project(':buildSrc').buildFileName = 'buildSrc.gradle'
