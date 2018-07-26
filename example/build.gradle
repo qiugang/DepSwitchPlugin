@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+apply plugin: 'dep-switch'
+
+depSwitch {
+    "module_a" {
+        action = "implementation"
+        dependency = "com.android.support:appcompat-v7:26.1.0"
+    }
+    "module_b" {
+        action = "implementation"
+        dependency = "com.squareup.retrofit2:retrofit:2.4.0"
+    }
+    "module_c" {
+        action = "implementation"
+        dependency = "com.android.support.constraint:constraint-layout:1.0.2"
+    }
+}
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "io.github.letusplay.depswitch"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+}

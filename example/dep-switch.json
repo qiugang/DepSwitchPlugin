@@ -1,0 +1,12 @@
+[
+  {
+    "name": "module_a",
+    "depNotation": "example_module",
+    "status": true
+  },
+  {
+    "name": "module_b",
+    "depNotation": "module_b",
+    "status": false
+  }
+]
