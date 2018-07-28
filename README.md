@@ -5,7 +5,7 @@ One-step to switch aar dependency or source dependency.
 
 [中文文档](https://github.com/qiugang/DepSwitchPlugin/blob/master/README-zh.md)
 
-For a slightly larger Android projects, packaging business modules into aar dependencies is a common operation, uploading to public or self-built maven, and the main project will rely on these aars. But for the actual development process, developers often need to switch dependencies from aar to source dependencies to complete new functions or debug.
+For a slightly larger Android projects, packaging business modules into aar dependencies is a common operation, uploading to public or self-built maven, and the main project will rely on these aars. But for the actual development process, developers often need to switch dependencies from aar to source dependencies to complete new features or debug.
 
 DepSwicth can use its own configuration file to switch to local source dependencies in one step, without modifying the specific build.gradle to improve development efficiency. It is also highly recommended to add the configuration file to ```.gitignore``` to resolve conflicts caused by modifying the build.gradle file in multiplayer development mode.
 
